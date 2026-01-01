@@ -7,7 +7,7 @@ Implements consent-first behavior where all actions require explicit approval.
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Dict, Optional, Set
+from typing import Dict, List, Optional, Set
 
 
 class ConsentType(Enum):
@@ -170,7 +170,7 @@ class ConsentManager:
         request.status = ConsentStatus.DENIED
         return True
     
-    def get_pending_requests(self) -> list[ConsentRequest]:
+    def get_pending_requests(self) -> List[ConsentRequest]:
         """Get all pending consent requests."""
         return [
             req for req in self._consents.values()
