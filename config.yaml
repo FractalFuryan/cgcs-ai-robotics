@@ -1,0 +1,41 @@
+# CGCS Configuration
+
+# Consent Management
+consent:
+  default_behavior: deny  # Refusal-first approach
+  require_explicit_approval: true
+  consent_expiration_enabled: true
+  
+# Fatigue Tracking
+fatigue:
+  energy_cost_per_action: 5.0
+  max_actions_before_rest: 20
+  min_rest_duration_minutes: 5
+  recovery_rate_per_minute: 10.0
+  
+# Memory Store
+memory:
+  forget_by_default: true
+  require_consent_to_store: true
+  require_consent_to_retrieve: true
+  enable_cue_based_retrieval: true
+  
+# Loop Prevention
+loop_prevention:
+  enabled: true
+  window_size: 10
+  similarity_threshold: 0.8
+  max_repetitions: 3
+  
+# De-escalation
+de_escalation:
+  enabled: true
+  max_escalation_level: 5
+  escalation_increment: 2
+  circuit_breaker_enabled: true
+  
+# Role Configuration
+roles:
+  require_consent_for_assignment: true
+  enforce_bounded_permissions: true
+  max_role_duration_seconds: null  # null = no limit
