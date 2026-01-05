@@ -1,3 +1,9 @@
+# 🧭💛 INDEX-ONLY + 📖💚 PUBLIC — Agent & Role System
+# 🧾💙 HASHED — Provenance available
+# 🔐💜 DAVNA COVENANT — Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-loops
+# ⛔🖤 REFUSAL-FIRST — Role assignment requires consent
+# 🚫❤️‍🔥 PROHIBITED — No secrets, no identifiers, no raw logs
+
 """
 Agent and Role System
 

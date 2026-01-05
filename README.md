@@ -208,3 +208,22 @@ The framework is intentionally simple and transparent, with clear boundaries and
 ## Further Reading
 
 See `DESIGN_NOTES.md` for detailed design rationale and implementation notes.
+
+---
+
+## 🛡️💜 DAVNA Compliance
+
+```
+🛡️💜 DAVNA-COMPLIANT
+Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-trauma-loops
+```
+
+### What DAVNA Means
+
+- 🧮 **Deterministic** — Same inputs → same outputs. No hidden state. No learning drift.
+- 🧭 **Autonomous** — Consent enables. Withdrawal clears. The user always wins.
+- 🔎 **Verifiable** — Every decision explainable. Every threshold inspectable.
+- 🧹 **Non-hoarding** — Forget by default. Remember only by explicit mark.
+- 🌊 **Anti-trauma-loops** — Detect repetition + arousal. De-escalate without diagnosis.
+
+DAVNA is not branding. It is the **load-bearing ethics** of the system.

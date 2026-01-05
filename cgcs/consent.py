@@ -1,3 +1,9 @@
+# 🧭💛 INDEX-ONLY + 📖💚 PUBLIC — Consent Manager
+# 🧾💙 HASHED — Provenance available
+# 🔐💜 DAVNA COVENANT — Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-loops
+# ⛔🖤 REFUSAL-FIRST — All actions denied by default
+# 🚫❤️‍🔥 PROHIBITED — No secrets, no identifiers, no raw logs
+
 """
 Consent Management System
 

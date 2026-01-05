@@ -1,3 +1,9 @@
+# 🧭💛 INDEX-ONLY + 📖💚 PUBLIC — Memory Store
+# 🧾💙 HASHED — Provenance available
+# 🔐💜 DAVNA COVENANT — Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-loops
+# ⛔🖤 REFUSAL-FIRST — Forget by default, consent required
+# 🚫❤️‍🔥 PROHIBITED — No raw content storage, handles/indexes only
+
 """
 Memory Store System
 

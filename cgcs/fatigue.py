@@ -1,3 +1,9 @@
+# ⚠️🧡 CAUTION + 🧭💛 INDEX-ONLY — Fatigue Tracker
+# 🧾💙 HASHED — Provenance available
+# 🔐💜 DAVNA COVENANT — Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-loops
+# ⛔🖤 REFUSAL-FIRST — Mandatory rest enforced
+# 🚫❤️‍🔥 PROHIBITED — No secrets, no identifiers, no raw logs
+
 """
 Fatigue Tracking System
 

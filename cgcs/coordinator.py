@@ -1,3 +1,9 @@
+# ⚠️🧡 CAUTION + 🧭💛 INDEX-ONLY — Loop Guard & Coordinator
+# 🧾💙 HASHED — Provenance available
+# 🔐💜 DAVNA COVENANT — Deterministic · Autonomous · Verifiable · Non-hoarding · Anti-loops
+# ⛔🖤 REFUSAL-FIRST — De-escalation without diagnosis
+# 🚫❤️‍🔥 PROHIBITED — No diagnosis, no content retention
+
 """
 Coordinator System
 
