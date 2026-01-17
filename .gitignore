@@ -1,0 +1,23 @@
+# 🔴🚫❤️‍🔥 SECRETS — NEVER commit these files
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+.env/
+.venv/
+venv/
+
+# Secrets (NEVER commit these)
+*.key
+*.pem
+secrets.env
+.secrets/
+*.sealed
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
