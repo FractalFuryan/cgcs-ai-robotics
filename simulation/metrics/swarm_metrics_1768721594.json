@@ -1,0 +1,851 @@
+{
+  "config": {
+    "num_agents": 100,
+    "simulation_steps": 500,
+    "world_size": [
+      1000.0,
+      1000.0
+    ]
+  },
+  "results": {
+    "simulation_summary": {
+      "total_steps": 500,
+      "total_agents": 100,
+      "failed_agents": 0,
+      "simulation_duration": 6.626171588897705,
+      "average_step_time": 0.013057921886444092
+    },
+    "invariant_analysis": {
+      "total_checks": 0,
+      "risk_de_escalations": 0
+    },
+    "consent_analysis": {
+      "total_events": 5369,
+      "consent_granted": 5369,
+      "consent_rate": 1.0
+    },
+    "communication_analysis": {
+      "total_events": 6772,
+      "successful_communications": 5369,
+      "success_rate": 0.7928233904311872
+    },
+    "emergent_behavior": {
+      "clusters_detected": 10,
+      "coordinated_movements": 10,
+      "largest_cluster": 4
+    },
+    "performance_metrics": {
+      "steps_per_second": 75.41765749307508,
+      "agent_updates_per_second": 7541.7622234941555
+    },
+    "scale_validation": {
+      "agents_simulated": 100,
+      "steps_completed": 500,
+      "total_agent_steps": 50000,
+      "communication_events": 6772,
+      "consent_events": 5369
+    }
+  },
+  "step_data": [
+    {
+      "step": 400,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.002010000000000003,
+      "average_risk": 0.17182568635883627,
+      "average_battery": 0.6796487931566357
+    },
+    {
+      "step": 401,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.002005000000000003,
+      "average_risk": 0.17143520624136568,
+      "average_battery": 0.6795487931566357
+    },
+    {
+      "step": 402,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.002000000000000003,
+      "average_risk": 0.17198830081838384,
+      "average_battery": 0.6794487931566358
+    },
+    {
+      "step": 403,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001995000000000003,
+      "average_risk": 0.17244629840066503,
+      "average_battery": 0.6793487931566358
+    },
+    {
+      "step": 404,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001990000000000003,
+      "average_risk": 0.1729213042788077,
+      "average_battery": 0.6792487931566358
+    },
+    {
+      "step": 405,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001985000000000003,
+      "average_risk": 0.17294844279137855,
+      "average_battery": 0.6791487931566358
+    },
+    {
+      "step": 406,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001980000000000003,
+      "average_risk": 0.1727458891795817,
+      "average_battery": 0.6790487931566358
+    },
+    {
+      "step": 407,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001975000000000003,
+      "average_risk": 0.1724093460527403,
+      "average_battery": 0.6789487931566358
+    },
+    {
+      "step": 408,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001970000000000003,
+      "average_risk": 0.17167766571433893,
+      "average_battery": 0.6788487931566358
+    },
+    {
+      "step": 409,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019650000000000028,
+      "average_risk": 0.17232507278753964,
+      "average_battery": 0.6787487931566358
+    },
+    {
+      "step": 410,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001960000000000003,
+      "average_risk": 0.17392051238946138,
+      "average_battery": 0.6786487931566358
+    },
+    {
+      "step": 411,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019550000000000027,
+      "average_risk": 0.17333321055007572,
+      "average_battery": 0.6785487931566359
+    },
+    {
+      "step": 412,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001950000000000003,
+      "average_risk": 0.17330961429008224,
+      "average_battery": 0.6784487931566359
+    },
+    {
+      "step": 413,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001945000000000003,
+      "average_risk": 0.17243325775097904,
+      "average_battery": 0.6783487931566359
+    },
+    {
+      "step": 414,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001940000000000003,
+      "average_risk": 0.1721694694011943,
+      "average_battery": 0.6782487931566359
+    },
+    {
+      "step": 415,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001935000000000003,
+      "average_risk": 0.1725663781919815,
+      "average_battery": 0.6781487931566359
+    },
+    {
+      "step": 416,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.001930000000000003,
+      "average_risk": 0.17139192339284792,
+      "average_battery": 0.6780487931566359
+    },
+    {
+      "step": 417,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019250000000000029,
+      "average_risk": 0.17109346948615875,
+      "average_battery": 0.6779487931566359
+    },
+    {
+      "step": 418,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019200000000000029,
+      "average_risk": 0.1714551515577784,
+      "average_battery": 0.6778487931566359
+    },
+    {
+      "step": 419,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019150000000000029,
+      "average_risk": 0.1706243398923353,
+      "average_battery": 0.6777487931566359
+    },
+    {
+      "step": 420,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019100000000000028,
+      "average_risk": 0.17109370551565511,
+      "average_battery": 0.677648793156636
+    },
+    {
+      "step": 421,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019050000000000028,
+      "average_risk": 0.17161025825663942,
+      "average_battery": 0.677548793156636
+    },
+    {
+      "step": 422,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0019000000000000028,
+      "average_risk": 0.17256866150625202,
+      "average_battery": 0.677448793156636
+    },
+    {
+      "step": 423,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018950000000000028,
+      "average_risk": 0.17437492153329365,
+      "average_battery": 0.677348793156636
+    },
+    {
+      "step": 424,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018900000000000028,
+      "average_risk": 0.17319355163390207,
+      "average_battery": 0.677248793156636
+    },
+    {
+      "step": 425,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018850000000000028,
+      "average_risk": 0.172492220873298,
+      "average_battery": 0.677148793156636
+    },
+    {
+      "step": 426,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018800000000000028,
+      "average_risk": 0.17160736012578837,
+      "average_battery": 0.677048793156636
+    },
+    {
+      "step": 427,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018750000000000027,
+      "average_risk": 0.17209052506899078,
+      "average_battery": 0.676948793156636
+    },
+    {
+      "step": 428,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018700000000000027,
+      "average_risk": 0.1737977385896924,
+      "average_battery": 0.676848793156636
+    },
+    {
+      "step": 429,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018650000000000027,
+      "average_risk": 0.17311208298858002,
+      "average_battery": 0.676748793156636
+    },
+    {
+      "step": 430,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018600000000000027,
+      "average_risk": 0.1719378680822478,
+      "average_battery": 0.6766487931566361
+    },
+    {
+      "step": 431,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018550000000000027,
+      "average_risk": 0.1717244337187859,
+      "average_battery": 0.6765487931566361
+    },
+    {
+      "step": 432,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018500000000000027,
+      "average_risk": 0.17235516877866758,
+      "average_battery": 0.6764487931566361
+    },
+    {
+      "step": 433,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018450000000000027,
+      "average_risk": 0.1704020944932791,
+      "average_battery": 0.6763487931566361
+    },
+    {
+      "step": 434,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018400000000000027,
+      "average_risk": 0.1687009922450823,
+      "average_battery": 0.6762487931566361
+    },
+    {
+      "step": 435,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018350000000000026,
+      "average_risk": 0.16895155232690323,
+      "average_battery": 0.6761487931566361
+    },
+    {
+      "step": 436,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018300000000000026,
+      "average_risk": 0.16749032430406682,
+      "average_battery": 0.6760487931566361
+    },
+    {
+      "step": 437,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018250000000000028,
+      "average_risk": 0.16804773202459153,
+      "average_battery": 0.6759487931566361
+    },
+    {
+      "step": 438,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018200000000000028,
+      "average_risk": 0.1685802846517264,
+      "average_battery": 0.6758487931566362
+    },
+    {
+      "step": 439,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018150000000000028,
+      "average_risk": 0.16734332270715385,
+      "average_battery": 0.6757487931566362
+    },
+    {
+      "step": 440,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018100000000000028,
+      "average_risk": 0.1662589699196566,
+      "average_battery": 0.6756487931566362
+    },
+    {
+      "step": 441,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018050000000000028,
+      "average_risk": 0.1669975134200238,
+      "average_battery": 0.6755487931566362
+    },
+    {
+      "step": 442,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0018000000000000028,
+      "average_risk": 0.16650091309108545,
+      "average_battery": 0.6754487931566362
+    },
+    {
+      "step": 443,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017950000000000028,
+      "average_risk": 0.1678674344107162,
+      "average_battery": 0.6753487931566362
+    },
+    {
+      "step": 444,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017900000000000027,
+      "average_risk": 0.16679647529467057,
+      "average_battery": 0.6752487931566362
+    },
+    {
+      "step": 445,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017850000000000027,
+      "average_risk": 0.16811832665572032,
+      "average_battery": 0.6751487931566362
+    },
+    {
+      "step": 446,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017800000000000027,
+      "average_risk": 0.16788999503542085,
+      "average_battery": 0.6750487931566362
+    },
+    {
+      "step": 447,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017750000000000027,
+      "average_risk": 0.16670499073174497,
+      "average_battery": 0.6749487931566363
+    },
+    {
+      "step": 448,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017700000000000027,
+      "average_risk": 0.16667243281968305,
+      "average_battery": 0.6748487931566363
+    },
+    {
+      "step": 449,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017650000000000027,
+      "average_risk": 0.1678500875166727,
+      "average_battery": 0.6747487931566363
+    },
+    {
+      "step": 450,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017600000000000027,
+      "average_risk": 0.16920333556237424,
+      "average_battery": 0.6746487931566363
+    },
+    {
+      "step": 451,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017550000000000027,
+      "average_risk": 0.16852306193650515,
+      "average_battery": 0.6745487931566363
+    },
+    {
+      "step": 452,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017500000000000026,
+      "average_risk": 0.1694625731073034,
+      "average_battery": 0.6744487931566363
+    },
+    {
+      "step": 453,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017450000000000026,
+      "average_risk": 0.1688577700540968,
+      "average_battery": 0.6743487931566363
+    },
+    {
+      "step": 454,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017400000000000026,
+      "average_risk": 0.16702923451922239,
+      "average_battery": 0.6742487931566363
+    },
+    {
+      "step": 455,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017350000000000026,
+      "average_risk": 0.16636622595784356,
+      "average_battery": 0.6741487931566363
+    },
+    {
+      "step": 456,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017300000000000026,
+      "average_risk": 0.16621018228016995,
+      "average_battery": 0.6740487931566363
+    },
+    {
+      "step": 457,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017250000000000026,
+      "average_risk": 0.1664293468190652,
+      "average_battery": 0.6739487931566364
+    },
+    {
+      "step": 458,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017200000000000026,
+      "average_risk": 0.16718662762198955,
+      "average_battery": 0.6738487931566364
+    },
+    {
+      "step": 459,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017150000000000025,
+      "average_risk": 0.16871666878091462,
+      "average_battery": 0.6737487931566364
+    },
+    {
+      "step": 460,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017100000000000025,
+      "average_risk": 0.17015824841636026,
+      "average_battery": 0.6736487931566364
+    },
+    {
+      "step": 461,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017050000000000025,
+      "average_risk": 0.1689935432897109,
+      "average_battery": 0.6735487931566364
+    },
+    {
+      "step": 462,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0017000000000000027,
+      "average_risk": 0.16836535895232366,
+      "average_battery": 0.6734487931566364
+    },
+    {
+      "step": 463,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016950000000000027,
+      "average_risk": 0.16947571045317877,
+      "average_battery": 0.6733487931566364
+    },
+    {
+      "step": 464,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016900000000000027,
+      "average_risk": 0.1699617489529017,
+      "average_battery": 0.6732487931566364
+    },
+    {
+      "step": 465,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016850000000000027,
+      "average_risk": 0.1686550894491475,
+      "average_battery": 0.6731487931566364
+    },
+    {
+      "step": 466,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016800000000000027,
+      "average_risk": 0.1684502225462055,
+      "average_battery": 0.6730487931566365
+    },
+    {
+      "step": 467,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016750000000000027,
+      "average_risk": 0.16821495177890844,
+      "average_battery": 0.6729487931566365
+    },
+    {
+      "step": 468,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016700000000000026,
+      "average_risk": 0.16998356096692643,
+      "average_battery": 0.6728487931566365
+    },
+    {
+      "step": 469,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016650000000000026,
+      "average_risk": 0.17116096059469332,
+      "average_battery": 0.6727487931566365
+    },
+    {
+      "step": 470,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016600000000000026,
+      "average_risk": 0.17220660919226372,
+      "average_battery": 0.6726487931566365
+    },
+    {
+      "step": 471,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016550000000000026,
+      "average_risk": 0.1737880120408121,
+      "average_battery": 0.6725487931566365
+    },
+    {
+      "step": 472,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016500000000000026,
+      "average_risk": 0.1746715849436333,
+      "average_battery": 0.6724487931566365
+    },
+    {
+      "step": 473,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016450000000000026,
+      "average_risk": 0.17433332283058733,
+      "average_battery": 0.6723487931566365
+    },
+    {
+      "step": 474,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016400000000000026,
+      "average_risk": 0.17316494442598263,
+      "average_battery": 0.6722487931566365
+    },
+    {
+      "step": 475,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016350000000000026,
+      "average_risk": 0.17380289221276882,
+      "average_battery": 0.6721487931566366
+    },
+    {
+      "step": 476,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016300000000000025,
+      "average_risk": 0.17534248221391832,
+      "average_battery": 0.6720487931566366
+    },
+    {
+      "step": 477,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016250000000000025,
+      "average_risk": 0.17468926159163586,
+      "average_battery": 0.6719487931566366
+    },
+    {
+      "step": 478,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016200000000000025,
+      "average_risk": 0.17538482211158518,
+      "average_battery": 0.6718487931566366
+    },
+    {
+      "step": 479,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016150000000000025,
+      "average_risk": 0.17529046865461992,
+      "average_battery": 0.6717487931566366
+    },
+    {
+      "step": 480,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016100000000000025,
+      "average_risk": 0.17457358485521451,
+      "average_battery": 0.6716487931566366
+    },
+    {
+      "step": 481,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016050000000000025,
+      "average_risk": 0.17580782385727786,
+      "average_battery": 0.6715487931566366
+    },
+    {
+      "step": 482,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0016000000000000025,
+      "average_risk": 0.17590227624203456,
+      "average_battery": 0.6714487931566366
+    },
+    {
+      "step": 483,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015950000000000024,
+      "average_risk": 0.17682829446044762,
+      "average_battery": 0.6713487931566366
+    },
+    {
+      "step": 484,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015900000000000024,
+      "average_risk": 0.1778711377530701,
+      "average_battery": 0.6712487931566367
+    },
+    {
+      "step": 485,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015850000000000024,
+      "average_risk": 0.17957653895045947,
+      "average_battery": 0.6711487931566367
+    },
+    {
+      "step": 486,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015800000000000024,
+      "average_risk": 0.18092073968464206,
+      "average_battery": 0.6710487931566367
+    },
+    {
+      "step": 487,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015750000000000026,
+      "average_risk": 0.18040504172262684,
+      "average_battery": 0.6709487931566367
+    },
+    {
+      "step": 488,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015700000000000026,
+      "average_risk": 0.18016564212295874,
+      "average_battery": 0.6708487931566367
+    },
+    {
+      "step": 489,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015650000000000026,
+      "average_risk": 0.18100682178046074,
+      "average_battery": 0.6707487931566367
+    },
+    {
+      "step": 490,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015600000000000026,
+      "average_risk": 0.18095810564896064,
+      "average_battery": 0.6706487931566367
+    },
+    {
+      "step": 491,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015550000000000026,
+      "average_risk": 0.18158514305259385,
+      "average_battery": 0.6705487931566367
+    },
+    {
+      "step": 492,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015500000000000025,
+      "average_risk": 0.18117130315972374,
+      "average_battery": 0.6704487931566367
+    },
+    {
+      "step": 493,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015450000000000025,
+      "average_risk": 0.18317915203943577,
+      "average_battery": 0.6703487931566368
+    },
+    {
+      "step": 494,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015400000000000025,
+      "average_risk": 0.1836236057080709,
+      "average_battery": 0.6702487931566368
+    },
+    {
+      "step": 495,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015350000000000025,
+      "average_risk": 0.18129846979694778,
+      "average_battery": 0.6701487931566368
+    },
+    {
+      "step": 496,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015300000000000025,
+      "average_risk": 0.18198864479838991,
+      "average_battery": 0.6700487931566368
+    },
+    {
+      "step": 497,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015250000000000025,
+      "average_risk": 0.1811299725273434,
+      "average_battery": 0.6699487931566368
+    },
+    {
+      "step": 498,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015200000000000025,
+      "average_risk": 0.18078191277380812,
+      "average_battery": 0.6698487931566368
+    },
+    {
+      "step": 499,
+      "active_agents": 100,
+      "agents_with_roles": 0,
+      "average_fatigue": 0.0015150000000000025,
+      "average_risk": 0.18207909826578986,
+      "average_battery": 0.6697487931566368
+    }
+  ]
+}
