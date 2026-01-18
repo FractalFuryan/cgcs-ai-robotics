@@ -43,7 +43,35 @@ class WorldCue:
     ttl: Optional[int] = None
 
 
+@dataclass
+class HardwareStatus:
+    """Hardware status for certification logging."""
+    battery_level: float
+    motor_status: Dict[str, str]
+    sensor_status: Dict[str, bool]
+    position: Optional[List[float]] = None
+    orientation: Optional[List[float]] = None
+
+
 # ===================== APIS =====================
+
+class BaseHardwareInterface(ABC):
+    """Base interface for hardware abstraction."""
+    
+    @abstractmethod
+    def execute_action(self, request: ActionRequest) -> bool:
+        """Execute action with invariant enforcement."""
+        pass
+    
+    @abstractmethod
+    def read_sensors(self) -> Dict[str, Any]:
+        """Read all sensor data."""
+        pass
+    
+    @abstractmethod
+    def get_status(self) -> HardwareStatus:
+        """Get current hardware status."""
+        pass
 
 class UpwardAPI(ABC):
     """Lower layers → CGCS"""
