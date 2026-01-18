@@ -34,7 +34,8 @@ SECURITY.md:        8d1682650f19188af985b90cd4b529956d85d391271a98cba6eef0ab0f50
 stack/interfaces.py:                     3cda1c456db521d11347da84117cf910811fddbc82ef2eae313dfb330a8e40b6
 stack/mission_planner.py:                177426bef7d2a22f0dcc8af8ac3256acf3cf6a1719b6e20d8ec8d5fc8aa17ed1
 stack/fleet_manager.py:                  6a4addb512ebe19bb0b24e8da4f0ca9dcd7c15ee551eb8e6f0118dbde8dcda8c
-examples/demo_coordinated_mission.py:    98a25403124d43164a308a6f369c47df0c600628ea9cc2430b76a08a357f0e28
+stack/cgcs_adapter.py:                   66c56b70b5fbacb660c730a3f468be8da51078e58d74f1c38c2e5e2f85d3b110
+examples/demo_coordinated_mission.py:    dfc25884b5086c3281fc0e98d413b6b4d959b7ebc73878903e59d3cfb7374a95
 ```
 
 ## Verification Process
