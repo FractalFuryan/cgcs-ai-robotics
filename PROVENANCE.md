@@ -35,7 +35,10 @@ stack/interfaces.py:                     3cda1c456db521d11347da84117cf910811fddb
 stack/mission_planner.py:                177426bef7d2a22f0dcc8af8ac3256acf3cf6a1719b6e20d8ec8d5fc8aa17ed1
 stack/fleet_manager.py:                  6a4addb512ebe19bb0b24e8da4f0ca9dcd7c15ee551eb8e6f0118dbde8dcda8c
 stack/cgcs_adapter.py:                   66c56b70b5fbacb660c730a3f468be8da51078e58d74f1c38c2e5e2f85d3b110
+stack/hardware_interface.py:             da780318f20a82284475c954eadc4832b4dcdd5707a5370a6ca75d3909f751b3
+stack/robot_agent.py:                    8277b1af48a3e8d1c41185928102757a6005d77f39b2e071b8e56851ca63c8e2
 examples/demo_coordinated_mission.py:    dfc25884b5086c3281fc0e98d413b6b4d959b7ebc73878903e59d3cfb7374a95
+examples/demo_complete_system.py:        fa837c0fadfab9f9d9f085d97f16e826112688a61e086d544698f5b047c60b85
 ```
 
 ## Verification Process
