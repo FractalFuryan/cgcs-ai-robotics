@@ -18,6 +18,8 @@ Record the printed hashes below per release tag.
 cgcs_core.py:       d14906f9626a4201ec80a2cf6198dcbcf147b084d6048a2a04840b55b08d50f3
 loop_guard.py:      58cc8c64ded62a2c5e2cb65ae5a629f55c91d5bbabac7c69467a075405860818
 role_spec.py:       47cff47ac163f37a79bfe62c9af97503ee3cc611daed13dc6279e8e677cd8d67
+emoji_signal.py:    86eae345f8f8e04e3f39d5627879b0aae28c437e938d6583acdc8a3a061b0c03
+invariants.py:      055f97ee7c9d8f12ba094ef01916eac49a0abff9b4903416f3646c7ab559779e
 DAVNA-COVENANT.md:  7de4c41a54dce9fb07235f8b598af7c24b79b79bcb279a92c21ac49ac8bc32a6
 ETHICS-LICENSE.md:  5e6a1da72e394544a26bb202d447889ff215b3aa6b4723e735f0f0310a19708d
 README.md:          a1ae3ef8bc8936273d3f5aee10bfea083db6013c15471382c1981ae751f74a7d
