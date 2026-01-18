@@ -28,6 +28,15 @@ CONTRIBUTING.md:    9ea3f99fb2c8be3bd648c2b9da9fc7ef037317dbaae0dcc2294ceb332761
 SECURITY.md:        8d1682650f19188af985b90cd4b529956d85d391271a98cba6eef0ab0f508f54
 ```
 
+## Stack Layer Extensions (v1.1)
+
+```
+stack/interfaces.py:                     3cda1c456db521d11347da84117cf910811fddbc82ef2eae313dfb330a8e40b6
+stack/mission_planner.py:                177426bef7d2a22f0dcc8af8ac3256acf3cf6a1719b6e20d8ec8d5fc8aa17ed1
+stack/fleet_manager.py:                  6a4addb512ebe19bb0b24e8da4f0ca9dcd7c15ee551eb8e6f0118dbde8dcda8c
+examples/demo_coordinated_mission.py:    98a25403124d43164a308a6f369c47df0c600628ea9cc2430b76a08a357f0e28
+```
+
 ## Verification Process
 
 1. Clone the repository at the tagged release
