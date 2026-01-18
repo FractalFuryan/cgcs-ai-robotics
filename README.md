@@ -1,30 +1,36 @@
-# Consent-Gated Coherence System (CGCS)
+# CGCS — Consent-Gated Coherence System
 
-**CGCS** is a local-only, ethics-first coordination engine designed to improve reasoning without hoarding memory, coercing behavior, or creating escalation loops.
+**CGCS** is a local-only, ethics-first coordination engine for autonomous robotics. It provides deterministic, refusal-first coordination without hoarding memory, coercing behavior, or creating escalation loops.
 
-It separates **learning** from **remembering**, and makes persistence an explicit, human-controlled choice.
+Separates **learning** from **remembering**. Makes persistence an explicit, human-controlled choice.
 
 ---
 
-## Core Ideas
+## Architecture (L1-L7)
 
-- **Threads ≠ Memory**  
-  Conversations are short-term working memory and decay automatically.
+**Complete robotics stack — stdlib-only, zero external dependencies**
 
-- **Symbols = Permission**  
-  Long-term recall only exists when a human explicitly marks it.
+| Layer | Component | Purpose |
+|-------|-----------|---------|
+| **L7** | Mission Specification | High-level objectives and constraints |
+| **L6** | Mission Planner | Deterministic role expansion |
+| **L5** | Fleet Manager | Multi-agent coordination (no control authority) |
+| **L4** | CGCS Core | Consent-gated role management + stress engine |
+| **L3** | Loop Guard | Deterministic de-escalation detector |
+| **L2** | Dual Memory | Thread decay + opt-in symbol-indexed anchors |
+| **L1** | Emoji Protocol | Visual signaling with fail-closed validation |
 
-- **Roles are temporary**  
-  Capabilities are constrained by consented, bounded roles.
+---
 
-- **Fatigue is real**  
-  Load accumulates per role and clears only when released.
+## Core Principles
 
-- **LoopGuard is deterministic**  
-  Repetition + rapidity + intensity → gentle de-escalation (no diagnosis).
-
-- **Withdrawal dominates**  
-  One action clears roles, fatigue, and anchors immediately.
+- **Threads ≠ Memory** — Conversations auto-decay (50-item deque)
+- **Symbols = Permission** — Long-term recall requires explicit `[SYM:tag]`
+- **Roles are bounded** — Capabilities constrained by mission-specific roles
+- **Fatigue accumulates** — Per-role σ ∈ [0,1], threshold-gated de-escalation
+- **LoopGuard is deterministic** — Risk = 0.45×repeat + 0.25×rapid + 0.30×intensity
+- **Withdrawal dominates** — One action clears all state immediately
+- **Fleet coordination ≠ control** — FleetManager cannot override consent
 
 ---
 
@@ -40,22 +46,49 @@ It separates **learning** from **remembering**, and makes persistence an explici
 
 ## Quick Start
 
+**Core coordination engine:**
 ```bash
-python cgcs_core.py
+python3 cgcs_core.py
 ```
 
-Use `[SYM:tag1,tag2]` to explicitly anchor a moment for later recall.
+**Full stack demo:**
+```bash
+python3 examples/demo_coordinated_mission.py
+```
+
+**Run invariants test suite:**
+```bash
+python3 invariants.py
+```
 
 ---
 
-## Files That Matter
+## Repository Structure
 
-- `cgcs_core.py` — single-file reference implementation
-- `ARCHITECTURE.md` — system overview
-- `DAVNA-COVENANT.md` — ethical invariants (brief)
-- `DAVNA-PRINCIPLES.md` — technical deep-dive on each principle
-- `PROVENANCE.md` — SHA-256 audit trail
-- `VISUAL-CIPHER.md` — file markers and heart color legend
+**Core Implementation:**
+- `cgcs_core.py` — Single-file reference (313 LOC)
+- `role_spec.py` — Canonical role definitions (61 LOC)
+- `loop_guard.py` — Deterministic escalation detector (127 LOC)
+- `emoji_signal.py` — Protocol parser with fail-closed validation (158 LOC)
+- `invariants.py` — Formal test harness (99 LOC)
+
+**Robotics Stack:**
+- `stack/interfaces.py` — Formal APIs (frozen dataclasses)
+- `stack/mission_planner.py` — Stateless role expansion
+- `stack/fleet_manager.py` — Multi-agent coordinator
+
+**Tools:**
+- `tools/provenance_hash.py` — SHA-256 audit trail generator
+- `tools/secret_seal.py` — Stdlib-only encryption (PBKDF2 + HMAC)
+
+**Documentation:**
+- `ARCHITECTURE.md` — System design + ASCII flow diagram
+- `DAVNA-COVENANT.md` — Ethical invariants (brief)
+- `DAVNA-PRINCIPLES.md` — Technical deep-dive (226 LOC)
+- `VISUAL-CIPHER.md` — Dual-layer encoding guide (151 LOC)
+- `PROVENANCE.md` — SHA-256 hashes for v1.0/v1.1
+- `CONTRIBUTING.md` — Non-negotiables + boundaries
+- `SECURITY.md` — Local-first constraints
 
 ---
 
