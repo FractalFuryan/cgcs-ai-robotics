@@ -1,0 +1,41 @@
+# Prometheus configuration for Linear C Platform
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'linear-c-platform'
+    environment: 'development'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+# Rule files
+rule_files:
+  # - "alerts.yml"
+
+# Scrape configurations
+scrape_configs:
+  # Control Plane API metrics
+  - job_name: 'control-plane'
+    static_configs:
+      - targets: ['control-plane:8001']
+        labels:
+          service: 'control-plane'
+          component: 'api'
+
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          service: 'prometheus'
+
+  # Redis metrics (if redis_exporter is added)
+  - job_name: 'redis'
+    static_configs:
+      - targets: []  # Add redis_exporter:9121 if deployed
+        labels:
+          service: 'redis'

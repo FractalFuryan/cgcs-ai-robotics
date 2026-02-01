@@ -1,0 +1,138 @@
+version: '3.8'
+
+services:
+  # Redis for distributed state
+  redis:
+    image: redis:7-alpine
+    container_name: linear-c-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - linear-c-network
+
+  # Control Plane API
+  control-plane:
+    build:
+      context: ../..
+      dockerfile: platform/control-plane/Dockerfile
+    container_name: linear-c-control-plane
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=dev-secret-key
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ../../src:/app/src:ro
+      - ../../platform:/app/platform:ro
+    command: python -m uvicorn platform.control-plane.api.main:app --host 0.0.0.0 --port 8000 --reload
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - linear-c-network
+
+  # Dashboard (for development, would use React dev server)
+  dashboard:
+    image: nginx:alpine
+    container_name: linear-c-dashboard
+    ports:
+      - "3000:80"
+    volumes:
+      - ../../platform/control-plane/dashboard/build:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - control-plane
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - linear-c-network
+
+  # Analytics Engine
+  analytics:
+    build:
+      context: ../..
+      dockerfile: platform/analytics-engine/Dockerfile
+    container_name: linear-c-analytics
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - ../../src:/app/src:ro
+      - ../../platform:/app/platform:ro
+    command: python platform/analytics-engine/advanced_analytics.py
+    networks:
+      - linear-c-network
+
+  # Prometheus for metrics
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: linear-c-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    networks:
+      - linear-c-network
+
+  # Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: linear-c-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=redis-datasource
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana-dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml:ro
+    depends_on:
+      - prometheus
+    networks:
+      - linear-c-network
+
+networks:
+  linear-c-network:
+    driver: bridge
+    name: linear-c-network
+
+volumes:
+  redis-data:
+    name: linear-c-redis-data
+  prometheus-data:
+    name: linear-c-prometheus-data
+  grafana-data:
+    name: linear-c-grafana-data
