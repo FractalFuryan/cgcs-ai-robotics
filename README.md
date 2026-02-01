@@ -208,9 +208,9 @@ def move_forward(distance):
 - **Enterprise Security** - JWT auth, RBAC, TLS
 
 **Enterprise Components:**
-- [platform/control-plane/api/main.py](platform/control-plane/api/main.py) - Control Plane API
-- [platform/control-plane/dashboard/src/components/SafetyDashboard.jsx](platform/control-plane/dashboard/src/components/SafetyDashboard.jsx) - React Dashboard
-- [platform/analytics-engine/advanced_analytics.py](platform/analytics-engine/advanced_analytics.py) - ML Analytics
+- [linear_c_platform/control-plane/api/main.py](linear_c_platform/control-plane/api/main.py) - Control Plane API
+- [linear_c_platform/control-plane/dashboard/src/components/SafetyDashboard.jsx](linear_c_platform/control-plane/dashboard/src/components/SafetyDashboard.jsx) - React Dashboard
+- [linear_c_platform/analytics-engine/advanced_analytics.py](linear_c_platform/analytics-engine/advanced_analytics.py) - ML Analytics
 - [deployments/kubernetes/linear-c-platform.yaml](deployments/kubernetes/linear-c-platform.yaml) - K8s Manifests
 - [deploy_enterprise.py](deploy_enterprise.py) - Enterprise deployment automation
 

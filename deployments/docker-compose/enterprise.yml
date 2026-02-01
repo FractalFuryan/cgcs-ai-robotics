@@ -22,7 +22,7 @@ services:
   control-plane:
     build:
       context: ../..
-      dockerfile: platform/control-plane/Dockerfile
+      dockerfile: linear_c_platform/control-plane/Dockerfile
     container_name: linear-c-control-plane
     ports:
       - "8000:8000"
@@ -55,7 +55,7 @@ services:
     ports:
       - "3000:80"
     volumes:
-      - ../../platform/control-plane/dashboard/build:/usr/share/nginx/html:ro
+      - ../../linear_c_platform/control-plane/dashboard/build:/usr/share/nginx/html:ro
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
       - control-plane
@@ -71,7 +71,7 @@ services:
   analytics:
     build:
       context: ../..
-      dockerfile: platform/analytics-engine/Dockerfile
+      dockerfile: linear_c_platform/analytics-engine/Dockerfile
     container_name: linear-c-analytics
     environment:
       - REDIS_HOST=redis

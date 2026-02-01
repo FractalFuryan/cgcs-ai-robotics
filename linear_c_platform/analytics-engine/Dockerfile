@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copy code
 COPY src ./src
-COPY platform ./platform
+COPY linear_c_platform ./linear_c_platform
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
@@ -22,4 +22,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
     redis==5.0.1
 
 # Run the analytics engine
-CMD ["python", "platform/analytics-engine/advanced_analytics.py"]
+CMD ["python", "linear_c_platform/analytics-engine/advanced_analytics.py"]

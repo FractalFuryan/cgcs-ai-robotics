@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Copy requirements
 COPY pyproject.toml ./
 COPY src ./src
-COPY platform ./platform
+COPY linear_c_platform ./linear_c_platform
 
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
