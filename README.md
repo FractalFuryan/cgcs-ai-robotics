@@ -69,46 +69,123 @@ If an invariant would be violated:
 
 ---
 
+## �️ Linear C Safety Integration
+
+CGCS now includes **Linear C** - a deterministic emoji-based safety validation language.
+
+### Key Features
+- ✅ **Deterministic validation** - No ML, just pattern matching
+- ✅ **Human-readable rules** - Emoji-based syntax
+- ✅ **Real-time safety checks** - Sub-millisecond validation
+- ✅ **Comprehensive logging** - Full audit trail
+
+### Quick Example
+```python
+from src.core.linear_c import LinearCValidator
+from src.core.safety.decorators import linear_c_protected
+
+# Validate actions
+validator = LinearCValidator()
+result = validator.validate("🟢🧠✖️🧍")  # Green cognition with human
+if result.is_valid:
+    execute_action()
+
+# Protect robot actions
+@linear_c_protected(required_annotation="🟢🧠🚶")
+def move_forward(distance):
+    # Automatically validated before execution
+    pass
+```
+
+**See:** [Linear C Quick Start](docs/LINEAR_C_QUICKSTART.md)
+
+---
+
 ## 🚧 Current Phase
 
 ### Phase 1 — Formal Proof ✅ COMPLETE  
 - TLA+ verified
 - v1.0 tagged and citable
 
-### Phase 2 — ROS 2 Hardware ⏳ IN PROGRESS  
+### Phase 2 — ROS 2 Hardware ✅ COMPLETE
 - Physical execution gated by invariants
 - Emergency stop dominance
 - Certification-ready audit logs
 
-### Phase 3 — Large-Scale Swarm ⏳ NEXT  
+### Phase 3 — Large-Scale Swarm ✅ COMPLETE
 - 100+ agent simulation
 - Emergent coordination metrics
 - Consent & fatigue statistics
+
+### Phase 4 — Linear C Integration ✅ COMPLETE
+- Emoji-based safety validation
+- Deterministic pattern matching
+- Full monitoring dashboard
 
 ---
 
 ## 🚀 How to Use Today
 
-### Run a Coordinated Demo
+### Quick Start with Linear C
 ```bash
-python3 examples/demo_coordinated_mission.py
+# Test all Linear C components
+python examples/linear_c_integration/quickstart.py
+
+# Run validation tests
+pytest tests/unit/test_linear_c_basic.py -v
+
+# Try robot protection example
+python examples/linear_c_integration/robot_with_protection.py
+
+# Monitor safety dashboard
+python examples/linear_c_integration/dashboard_monitor.py
 ```
 
-### Run Multi-Agent Swarm
+### Run Coordinated Demos
 ```bash
-python3 examples/demo_multi_agent_swarm.py
+# Coordinated mission
+python examples/demo_coordinated_mission.py
+
+# Multi-agent swarm
+python examples/demo_multi_agent_swarm.py
+
+# ROS 2 integration
+python examples/demo_ros2_integration.py
+
+# 100-agent swarm simulation
+python examples/demo_swarm_simulation.py
 ```
 
 ### Run Verification Tests
 ```bash
-python3 verification/test_invariants.py
+# Linear C safety tests
+pytest tests/unit/test_linear_c_basic.py -v
+pytest tests/unit/test_safety_decorators.py -v
+pytest tests/unit/test_safety_scenarios.py -v
+
+# Core CGCS invariant tests
+python verification/test_invariants.py
 ```
 
-### Inspect the Proof
+### Inspect the Proofs
 ```bash
+# TLA+ formal proof
 cat verification/CGCS_Invariants.tla
 cat verification/PROOF_ANALYSIS.md
+
+# Linear C patterns
+cat src/core/linear_c/patterns.py
 ```
+
+---
+
+## 📚 Documentation
+
+- **[Linear C Quick Start](docs/LINEAR_C_QUICKSTART.md)** - Get started with Linear C safety validation
+- **[VALIDATION.md](VALIDATION.md)** - Triple verification evidence (TLA+ · ROS 2 · Swarm)
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture (L0-L7 layers)
+- **[VERIFICATION_RESULTS.md](VERIFICATION_RESULTS.md)** - Formal proof results
+- **[PROOF_ANALYSIS.md](verification/PROOF_ANALYSIS.md)** - TLA+ proof analysis
 
 ---
 
