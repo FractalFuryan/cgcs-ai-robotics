@@ -135,6 +135,7 @@ markers = [
     "hardware: marks tests requiring hardware",
     "ros2: marks tests requiring ROS 2",
     "simulation: marks tests requiring simulation",
+    "benchmark: marks performance benchmark tests",
 ]
 
 [tool.black]

@@ -7,7 +7,7 @@ import re
 from typing import Dict, List, Optional
 from dataclasses import dataclass, field
 from enum import Enum
-from datetime import datetime
+from datetime import datetime, timezone
 
 from .patterns import PatternLibrary
 
@@ -28,7 +28,7 @@ class ValidationResult:
     rule_id: str
     message: str
     details: Dict = field(default_factory=dict)
-    timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat())
+    timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     linear_c: str = ""
     
     def __repr__(self) -> str:
