@@ -20,7 +20,7 @@ logger = structlog.get_logger(__name__)
 
 # Platform detection
 try:
-    import RPi.GPIO as GPIO
+    import RPi.GPIO as GPIO  # type: ignore
     HAS_RPI_GPIO = True
 except ImportError:
     HAS_RPI_GPIO = False

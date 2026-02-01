@@ -12,14 +12,14 @@ from dataclasses import dataclass
 # Mock ROS 2 imports for systems without ROS installed
 # In production: from rclpy import ... (real ROS 2 imports)
 try:
-    import rclpy
-    from rclpy.node import Node
-    from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy, QoSDurabilityPolicy
-    from geometry_msgs.msg import Twist
-    from sensor_msgs.msg import LaserScan, Imu, BatteryState
-    from nav_msgs.msg import Odometry
-    from std_msgs.msg import String, Bool
-    from std_srvs.srv import Trigger, SetBool
+    import rclpy  # type: ignore
+    from rclpy.node import Node  # type: ignore
+    from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy, QoSDurabilityPolicy  # type: ignore
+    from geometry_msgs.msg import Twist  # type: ignore
+    from sensor_msgs.msg import LaserScan, Imu, BatteryState  # type: ignore
+    from nav_msgs.msg import Odometry  # type: ignore
+    from std_msgs.msg import String, Bool  # type: ignore
+    from std_srvs.srv import Trigger, SetBool  # type: ignore
     ROS2_AVAILABLE = True
 except ImportError:
     ROS2_AVAILABLE = False
