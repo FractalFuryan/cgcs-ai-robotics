@@ -1,0 +1,1 @@
+"""Hardware safety enforcement layer"""
