@@ -6,15 +6,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cgcs-ai-robotics-linear-c"
-version = "2.0.0"
-description = "AI Robotics with Linear C Safety Validation - Enterprise Platform"
+version = "3.0.0"
+description = "AI Robotics with Linear C Safety Validation - Complete Safety Ecosystem"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "Apache-2.0"}
 authors = [
     {name = "CGCS Robotics", email = "info@cgcs-robotics.ai"}
 ]
-keywords = ["robotics", "safety", "linear-c", "validation", "ai", "enterprise", "fleet-management"]
+keywords = ["robotics", "safety", "linear-c", "validation", "ai", "enterprise", "fleet-management", "marketplace", "certification", "ecosystem"]
 
 dependencies = [
     "numpy>=1.21.0",
@@ -99,8 +99,15 @@ kubernetes = [
     "pyyaml>=6.0",
 ]
 
+ecosystem = [
+    # Marketplace dependencies
+    "web3>=6.0.0",
+    "cryptography>=41.0.0",
+    "ipfshttpclient>=0.8.0",
+]
+
 all = [
-    "cgcs-ai-robotics-linear-c[dev,ros2,simulation,hardware,analytics,enterprise,cloud,kubernetes]"
+    "cgcs-ai-robotics-linear-c[dev,ros2,simulation,hardware,analytics,enterprise,cloud,kubernetes,ecosystem]"
 ]
 
 [project.scripts]
